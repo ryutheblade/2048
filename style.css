@@ -1,15 +1,19 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
-    height: 400px;
-    background-color: blue;
+    margin: 0 auto;
+    width: 480px;
+    height: 500px;
+    background-color: gray;
 }
 
 .grid div {
     width: 100px;
     height: 100px;
-    background-color: yellow;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: darkorange;
     font-size: 48px;
     text-align: center;
+    line-height: 16vmin;
 }
