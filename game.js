@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else generate()
     }
 
-    //TODO: write code for swiping right swipe right
+    //swipe right
     function moveRight() {
         for (let i=0;i < 16; i++) {
             if(i % 4 === 0) {
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
             squares[i+(width*3)].innerHTML = newColumn[3]
         }
     }
-
+    //combine compatible numbers in rows
     function combineRow() {
         for (let i=0; i < 15; i++) {
             if(squares[i].innerHTML === squares[i+1].innerHTML) {
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         checkForWin()
     }
-
+    //combine compatible numbers in columns
     function combineColumn() {
         for (let i=0; i < 12; i++) {
             if(squares[i].innerHTML === squares[i+width].innerHTML) {
